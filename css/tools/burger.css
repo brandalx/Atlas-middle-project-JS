@@ -78,11 +78,16 @@
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
+
+.first-button:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:active,
+.first-button:active,
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus,
 .navbar-toggler:hover {
-  outline: none;
-  box-shadow: none;
-  background: none;
+  outline: none !important;
+  box-shadow: none !important;
+  background: none !important;
 }

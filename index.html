@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css import -->
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
     <!-- Java Script import -->
     <script type="module" src="./js/app.js" defer></script>
 
@@ -13,11 +14,26 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="page-header container-fluid">
+      <header class="page-header container-fluid p-0 bg-body-tertiary">
         <div class="container">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Logo</a>
+              <a class="navbar-brand" href="#"
+                ><svg
+                  class="shake-lr"
+                  width="21"
+                  height="22"
+                  viewBox="0 0 21 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.5 10C16 10 18 12 18 14.5C18 15.38 17.75 16.21 17.31 16.9L20.39 20L19 21.39L15.88 18.32C15.19 18.75 14.37 19 13.5 19C11 19 9 17 9 14.5C9 12 11 10 13.5 10ZM13.5 12C12.837 12 12.2011 12.2634 11.7322 12.7322C11.2634 13.2011 11 13.837 11 14.5C11 15.163 11.2634 15.7989 11.7322 16.2678C12.2011 16.7366 12.837 17 13.5 17C14.163 17 14.7989 16.7366 15.2678 16.2678C15.7366 15.7989 16 15.163 16 14.5C16 13.837 15.7366 13.2011 15.2678 12.7322C14.7989 12.2634 14.163 12 13.5 12ZM12 4.11L6 2V13.89L7 14.24V14.5C7 15.14 7.09 15.76 7.26 16.34L6 15.9L0.66 17.97L0.5 18C0.367392 18 0.240215 17.9473 0.146447 17.8536C0.0526785 17.7598 0 17.6326 0 17.5V2.38C0 2.15 0.15 1.97 0.36 1.9L6 0L12 2.1L17.34 0H17.5C17.6326 0 17.7598 0.0526785 17.8536 0.146447C17.9473 0.240215 18 0.367392 18 0.5V9.81C16.7909 8.64686 15.1778 7.99803 13.5 8C13 8 12.5 8.06 12 8.17V4.11Z"
+                    fill="var(--primary)"
+                  />
+                </svg>
+                Atlas</a
+              >
               <button
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarTogglerDemo02"
@@ -60,10 +76,42 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2 class="text-center">Atlas</h2>
+              <h1
+                style="color: var(--heading)"
+                class="text-center display-1 fw-bolder"
+              >
+                Atlas
+                <svg
+                  class="shake-lr"
+                  width="58"
+                  height="60"
+                  viewBox="0 0 18 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6 13.4316C5.96853 13.4316 5.9371 13.4336 5.90588 13.4376C4.39769 13.6284 3.06669 13.9593 2.08992 14.4038C1.60331 14.6252 1.16669 14.8918 0.841033 15.2145C0.513145 15.5394 0.25 15.9726 0.25 16.4999C0.25 17.1948 0.69922 17.7188 1.183 18.0762C1.68146 18.4445 2.35481 18.7446 3.11944 18.9835C4.65763 19.4642 6.73658 19.7499 9 19.7499C11.2634 19.7499 13.3424 19.4642 14.8806 18.9835C15.6452 18.7446 16.3185 18.4445 16.817 18.0762C17.3008 17.7188 17.75 17.1948 17.75 16.4999C17.75 15.9726 17.4869 15.5394 17.159 15.2145C16.8333 14.8918 16.3967 14.6252 15.9101 14.4038C14.9333 13.9593 13.6023 13.6284 12.0941 13.4376C12.0629 13.4336 12.0315 13.4316 12 13.4316H11.5H6.5H6Z"
+                    fill="#CFD8DC"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9 0.25C7.17732 0.25 5.48178 0.857994 4.23719 2.0562C2.98681 3.25998 2.25 5.00346 2.25 7.15789C2.25 8.75214 3.07253 10.5097 4.02991 12.0429C5.00476 13.604 6.1998 15.0564 7.0976 16.068C8.11953 17.2194 9.88047 17.2194 10.9024 16.068C11.8002 15.0564 12.9952 13.604 13.9701 12.0429C14.9275 10.5097 15.75 8.75214 15.75 7.15789C15.75 5.00346 15.0132 3.25998 13.7628 2.0562C12.5182 0.857994 10.8227 0.25 9 0.25Z"
+                    fill="var(--primary)"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9 3.25C7.48122 3.25 6.25 4.48122 6.25 6C6.25 7.51878 7.48122 8.75 9 8.75C10.5188 8.75 11.75 7.51878 11.75 6C11.75 4.48122 10.5188 3.25 9 3.25Z"
+                    fill="#F9F9F9"
+                  />
+                </svg>
+              </h1>
             </div>
             <div class="col-12">
-              <form class="d-flex mt-5" role="search">
+              <form class="d-flex mt-3" role="search">
                 <input
                   class="form-control me-2"
                   type="search"
@@ -76,12 +124,67 @@
               </form>
             </div>
           </div>
+
+          <div class="row" id="main-appender">
+            <div class="col-12 country-data" id="info-appender">
+              <div class="row justify-content-between">
+                <div class="col-lg-6 col-sm-12">
+                  <img
+                    class="w-100 rounded-3 shadow-lg scale-in-center"
+                    src="./img/USA.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-lg-2 col-sm-12 mt-4">
+                  <h3>USA</h3>
+                  <p>
+                    <n class="text-secondary">Population:</n>
+                    9.000.430
+                  </p>
+                  <p><n class="text-secondary">Region::</n> North America</p>
+                  <p><n class="text-secondary">Languages:</n> English</p>
+                  <p><n class="text-secondary">Currency:</n> US Dollar</p>
+                  <p><n class="text-secondary">Capital:</n> Washington D.C</p>
+                </div>
+                <div class="col-lg-2 col-sm-12 mt-4">
+                  <h4>Border states:</h4>
+                  <a href="#">Mexico</a>
+                  <a href="#">Canada</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12" id="map-appender">
+              <div class="col-12 mx-auto map-wrapper">
+                <iframe
+                  id="map-main"
+                  class="map-main rounded-3"
+                  title="mapgoogle"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d516069.8849273327!2d34.80445026165621!3d31.81620169048282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sil!4v1675378049033!5m2!1sen!2sil"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
-      <footer class="page-footer container-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">this is footer</div>
+
+      <footer class="page-footer container-fluid p-0 bg-body-tertiary">
+        <hr class="text-secondary" />
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="text-secondary">
+              This is middle JS project. See more at my
+              <a
+                target="_blank"
+                href="https://github.com/brandalx/atlas-middle-project"
+                >GitHub repo
+              </a>
+            </p>
           </div>
         </div>
       </footer>

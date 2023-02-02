@@ -1,0 +1,3 @@
+main-appender
+info-appender
+map-appender
