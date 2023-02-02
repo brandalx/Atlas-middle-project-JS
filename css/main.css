@@ -1,9 +1,10 @@
 /* All css imports here */
-@import "./general.css";
-/*For global styles*/
 
 /*Tools styles*/
-@import "./bootstrap.min.css";
+@import "../bootstrap/css/bootstrap.min.css";
 @import "./tools/sticky-footer.css";
+@import "./tools/burger.css";
 /*Pages styles*/
 @import "./index.css";
+/*For global styles*/
+@import "./general.css";

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css import -->
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- Java Script import -->
+    <script type="module" src="./js/app.js" defer></script>
 
     <title>Document</title>
   </head>
@@ -13,25 +15,66 @@
     <div class="wrapper">
       <header class="page-header container-fluid">
         <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-2">Logo</div>
-            <div class="col-10">
-              <nav class="d-flex justify-content-between">
-                <h3>Favorites:</h3>
-                <a href="#">USA</a>
-                <a href="#">Israel</a>
-                <a href="#">UK</a>
-                <a href="#">France</a>
-                <a href="#">Thailand</a>
-              </nav>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Logo</a>
+              <button
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                class="navbar-toggler first-button border-0"
+                type="button"
+              >
+                <div class="animated-icon1">
+                  <span></span><span></span><span></span>
+                </div>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >USA</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Israel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">UK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">France</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Thailand</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </nav>
         </div>
       </header>
-      <main class="page-body container-fluid">
+      <main class="page-body container-fluid main-strip">
         <div class="container">
           <div class="row">
-            <div class="col-12"></div>
+            <div class="col-12">
+              <h2 class="text-center">Atlas</h2>
+            </div>
+            <div class="col-12">
+              <form class="d-flex mt-5" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Please, enter country name to display info"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-primary" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </main>
@@ -44,4 +87,5 @@
       </footer>
     </div>
   </body>
+  <script src="./bootstrap/js/bootstrap.js"></script>
 </html>
