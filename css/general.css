@@ -1,0 +1,88 @@
+/* All global styles goes here */
+
+/* global variables decloration*/
+:root {
+  --primary: #ffb444;
+  --secondary: #3b414b;
+  --heading: #2c3136;
+  --paragraphMain: #262626;
+  --paragraphSecondary: #686868;
+  --paragraphTurtary: #afafaf;
+  --whites: #ffffff;
+  --blacks: #000000;
+}
+
+::-webkit-scrollbar {
+  /* Set the background color of the scrollbar */
+  background-color: var(--blackMain); /* This will create a blue scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: var(--yellow);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+input::placeholder {
+  padding-left: 10px;
+}
+input {
+  padding-left: 10px;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  color: var(--whites);
+  transition: ease-out 0.3s;
+}
+
+a:hover {
+  transition: all 0.3s !important;
+  color: var(--yellow);
+  transition: ease-in 0.3s;
+}
+
+p {
+  color: #262626;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+}
+
+h1 {
+  color: #3b414b;
+  font-weight: 700;
+  font-size: 2.75em;
+  line-height: 46px;
+}
+
+h2 {
+  color: #3b414b;
+  font-weight: 700;
+  font-size: 2.25em;
+  line-height: 40px;
+}
+
+h3 {
+  color: #3b414b;
+  font-weight: 400;
+  font-size: 1.625;
+  line-height: 26px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 26px;
+}
+
+h5 {
+  color: #3b414b;
+}
