@@ -1,4 +1,6 @@
 import Atlas from "./atlasItem.js";
+import { bordercountry } from "./atlasForm.js";
+
 // import { searchQ } from "./atlasForm.js";
 
 let query = " ";
@@ -12,6 +14,15 @@ search.addEventListener("submit", (e) => {
 
   doApi(query);
 });
+
+export const doApiFav = async (query2) => {
+  let countryCode = query2;
+  const url = ` https://restcountries.com/v3.1/alpha/${countryCode}`;
+  div.innerHTML = `<h3 style="color:var(--primary)" class=" text-center mt-4 mx-auto">Loading...</h3>`;
+  const resp = await axios.get(url);
+  console.log(resp.data);
+  createList(resp.data);
+};
 
 export const doApi = async (query) => {
   try {
@@ -48,4 +59,5 @@ export const createList = (arr) => {
     let list = new Atlas("#main-appender", item);
     list.render();
   });
+  bordercountry();
 };

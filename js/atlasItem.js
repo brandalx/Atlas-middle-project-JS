@@ -146,9 +146,10 @@ export default class Atlas {
             </svg>
             Border states:
           </h4>
-          <ul class="list-unstyled">
+          <ul class="list-unstyled borders">
            
-          <li><a class="text-wrap"href="#">${this.borders}</a></li>
+
+        
           </ul>
         </div>
       </div>
@@ -171,5 +172,15 @@ export default class Atlas {
       </div>
     </div>
   </div>`;
+
+    let appenderBorder = document.querySelector(".borders");
+    let div2 = document.createElement("div");
+
+    let arr = this.borders;
+    arr.forEach((item, index) => {
+      console.log(this.borders[index]);
+      div2.innerHTML += `  <li><a class="text-wrap bordercountry"href="#">${this.borders[index]}</a></li>`;
+      appenderBorder.appendChild(div2);
+    });
   }
 }
