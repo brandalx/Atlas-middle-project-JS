@@ -19,12 +19,14 @@ export const doApi = async (query) => {
     // console.log(query.get("search"));
     if (query.length < 2) {
       const url = `https://restcountries.com/v3.1/name/${defauslt}`;
+      div.innerHTML = `<h3  style="color:var(--primary)" class=" text-center mt-4 mx-auto">Loading...</h3>`;
       const resp = await axios.get(url);
       console.log(resp.data);
 
       createList(resp.data);
     } else {
       const url = `https://restcountries.com/v3.1/name/${query}`;
+      div.innerHTML = `<h3 style="color:var(--primary)" class=" text-center mt-4 mx-auto">Loading...</h3>`;
       const resp = await axios.get(url);
       console.log(resp.data);
       createList(resp.data);
@@ -32,7 +34,7 @@ export const doApi = async (query) => {
   } catch (err) {
     console.log(err);
     div.innerHTML = " ";
-    div.innerHTML = `<p style="font-size:0.9em" class="text-secondary text-center mt-4">Sorry, we didnt find anything for your request<bold  style="color:var(--primary)" class="fw-bold"> ${query}</bold>. Would you like to rewrite your search?</p>`;
+    div.innerHTML = `<p style="font-size:0.9em" class=" text-center mt-4">Sorry, we didnt find anything for your request<bold  style="color:var(--primary)" class="fw-bold"> ${query}</bold>. Check your connection or try to rewrite your search</p>`;
   }
 };
 

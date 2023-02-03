@@ -10,6 +10,7 @@ export default class Atlas {
     this.borders = _item.borders;
     this.maps = _item.maps.googleMaps;
     this.flags = _item.flags.png;
+    this.position = _item.latlng;
   }
   render() {
     let values = [];
@@ -159,7 +160,9 @@ export default class Atlas {
           id="map-main"
           class="map-main rounded-3"
           title="mapgoogle"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d516069.8849273327!2d34.80445026165621!3d31.81620169048282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sil!4v1675378049033!5m2!1sen!2sil"
+          src="https://maps.google.com/maps?q=${this.position[0]},${
+      this.position[1]
+    }&z=6&ie=UTF8&iwloc=&output=embed"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
