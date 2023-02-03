@@ -1,20 +1,5 @@
 import { doApi, doApiFav } from "./atlasList.js";
 
-// import { doApi } from "./atlasList";
-
-// export const searchQ = () => {
-//   let query = " ";
-
-//   let input = document.querySelector("#input");
-//   let search = document.querySelector("#search");
-//   search.addEventListener("submit", (e) => {
-//     e.preventDefault();
-//     query = input.value;
-
-//     doApi(query);
-//   });
-// };
-
 export const favorites = () => {
   const fav1 = document.querySelector("#fav1");
   const fav2 = document.querySelector("#fav2");
@@ -41,10 +26,10 @@ export const favorites = () => {
 
 export const bordercountry = () => {
   const links = document.querySelectorAll(".bordercountry");
-  for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", () => {
-      console.log(links[i].innerHTML);
-      doApiFav(links[i].innerHTML);
+  for (const element of links) {
+    element.addEventListener("click", () => {
+      console.log(element.innerHTML);
+      doApiFav(element.innerHTML);
     });
   }
 };

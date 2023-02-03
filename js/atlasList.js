@@ -1,8 +1,6 @@
 import Atlas from "./atlasItem.js";
 import { bordercountry } from "./atlasForm.js";
 
-// import { searchQ } from "./atlasForm.js";
-
 let query = " ";
 let div = document.querySelector("#main-appender");
 
@@ -26,8 +24,6 @@ export const doApiFav = async (query2) => {
 
 export const doApi = async (query) => {
   try {
-    // let query = new URLSearchParams(window.location.search);
-    // console.log(query.get("search"));
     if (query.length < 2) {
       const url = `https://restcountries.com/v3.1/name/${defauslt}`;
       div.innerHTML = `<h3  style="color:var(--primary)" class=" text-center mt-4 mx-auto">Loading...</h3>`;

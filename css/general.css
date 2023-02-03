@@ -15,8 +15,7 @@
 }
 
 ::-webkit-scrollbar {
-  /* Set the background color of the scrollbar */
-  background-color: var(--blackMain); /* This will create a blue scrollbar */
+  background-color: var(--blackMain);
 }
 
 ::-webkit-scrollbar-thumb {

@@ -22,6 +22,8 @@ footer {
   padding: 25px 0;
 }
 
+/* animation keyframes and classes */
+
 .shake-lr {
   -webkit-animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;

@@ -16,7 +16,7 @@ export default class Atlas {
     let values = [];
     for (const key in this.currencies) {
       const currency = this.currencies[key];
-      // console.log(`${key}:`);
+
       for (const property in currency) {
         values.push(currency[property]);
       }
