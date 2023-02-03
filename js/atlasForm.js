@@ -48,3 +48,10 @@ export const bordercountry = () => {
     });
   }
 };
+
+export const mainlogo = () => {
+  let main = document.querySelector("#main");
+  main.addEventListener("click", () => {
+    doApi("israel");
+  });
+};
