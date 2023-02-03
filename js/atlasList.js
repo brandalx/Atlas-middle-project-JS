@@ -47,7 +47,7 @@ export const doApi = async (query) => {
 
 export const createList = (arr) => {
   div.innerHTML = " ";
-  const temp_arr = arr.slice(0, 5);
+  const temp_arr = arr.slice(0, 1);
 
   console.log(temp_arr);
 
