@@ -81,7 +81,7 @@ export default class Atlas {
               </svg>
               Languages:</n
             >
-            ${this.languages}
+            ${_.merge(this.languages)}
           </p>
           <p>
             <n class="text-secondary"
