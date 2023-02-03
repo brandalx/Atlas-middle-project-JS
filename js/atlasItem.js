@@ -12,6 +12,14 @@ export default class Atlas {
     this.flags = _item.flags.png;
   }
   render() {
+    let values = [];
+    for (const key in this.currencies) {
+      const currency = this.currencies[key];
+      // console.log(`${key}:`);
+      for (const property in currency) {
+        values.push(currency[property]);
+      }
+    }
     let div = document.createElement("div");
     div.className = "row";
     document.querySelector(this.parent).append(div);
@@ -81,7 +89,7 @@ export default class Atlas {
               </svg>
               Languages:</n
             >
-            ${_.merge(this.languages)}
+            ${Object.values(this.languages)}
           </p>
           <p>
             <n class="text-secondary"
@@ -99,7 +107,7 @@ export default class Atlas {
               </svg>
               Currency:</n
             >
-            ${this.currencies}
+            ${values}
           </p>
           <p>
             <n class="text-secondary"
@@ -138,8 +146,8 @@ export default class Atlas {
             Border states:
           </h4>
           <ul class="list-unstyled">
-            <li><a href="#">${this.borders}</a></li>
            
+          <li><a class="text-wrap"href="#">${this.borders}</a></li>
           </ul>
         </div>
       </div>
