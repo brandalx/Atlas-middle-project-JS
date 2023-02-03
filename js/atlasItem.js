@@ -25,10 +25,10 @@ export default class Atlas {
     div.className = "row";
     document.querySelector(this.parent).append(div);
     div.innerHTML = ` 
-    <div class="row">
+    <div class="row mx-auto">
     <div class="col-12 country-data" id="info-appender">
-      <div class="row justify-content-between">
-        <div class="col-lg-6 col-sm-12">
+      <div class="row justify-content-between mx-auto">
+        <div class="col-lg-6 col-sm-12 ">
           <img
             class="w-100 rounded-3 shadow-lg scale-in-center"
             src="${this.flags}"
@@ -154,8 +154,8 @@ export default class Atlas {
       </div>
     </div>
 
-    <div class="col-12" id="map-appender">
-      <div class="col-12 mx-auto map-wrapper">
+    <div class="col-12" id="map-appender mx-auto">
+      <div class="col-12  map-wrapper">
         <iframe
           id="map-main"
           class="map-main rounded-3"
