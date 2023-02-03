@@ -40,3 +40,11 @@ export const mainlogo = () => {
     doApi("israel");
   });
 };
+
+export const clicks = () => {
+  setTimeout(function () {
+    let button = document.querySelector(".hidden-button");
+
+    button.click();
+  }, 1000);
+};
