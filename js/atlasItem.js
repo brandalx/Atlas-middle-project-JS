@@ -177,10 +177,15 @@ export default class Atlas {
     let div2 = document.createElement("div");
 
     let arr = this.borders;
-    arr.forEach((item, index) => {
-      console.log(this.borders[index]);
-      div2.innerHTML += `  <li><a class="text-wrap bordercountry"href="#">${this.borders[index]}</a></li>`;
+    if (arr == undefined) {
+      div2.innerHTML += `  <li><bold class="fw-bold" style="color:var(--primary)"> ${this.name}</bold> dont have borders</li>`;
       appenderBorder.appendChild(div2);
-    });
+    } else {
+      arr.forEach((item, index) => {
+        console.log(this.borders[index]);
+        div2.innerHTML += `  <li><a class="text-wrap bordercountry"href="#">${this.borders[index]}</a></li>`;
+        appenderBorder.appendChild(div2);
+      });
+    }
   }
 }

@@ -26,9 +26,11 @@ export const favorites = () => {
 
 export const bordercountry = () => {
   const links = document.querySelectorAll(".bordercountry");
+
   for (const element of links) {
     element.addEventListener("click", () => {
       console.log(element.innerHTML);
+
       doApiFav(element.innerHTML);
     });
   }

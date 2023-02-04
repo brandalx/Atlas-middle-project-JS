@@ -9,6 +9,7 @@ let search = document.querySelector("#search");
 search.addEventListener("submit", (e) => {
   e.preventDefault();
   query = input.value.toLowerCase();
+  console.log("query is " + query);
 
   doApi(query);
 });
@@ -33,6 +34,7 @@ export const doApi = async (query) => {
       createList(resp.data);
     } else {
       const url = `https://restcountries.com/v3.1/name/${query}`;
+      console.log("url is " + url);
       div.innerHTML = `<h3 style="color:var(--primary)" class=" text-center mt-4 mx-auto">Loading...</h3>`;
       const resp = await axios.get(url);
       console.log(resp.data);
@@ -55,5 +57,9 @@ export const createList = (arr) => {
     let list = new Atlas("#main-appender", item);
     list.render();
   });
-  bordercountry();
+  if (document.querySelectorAll(".bordercountry").length == 0) {
+    console.log("no border countries");
+  } else {
+    bordercountry();
+  }
 };
