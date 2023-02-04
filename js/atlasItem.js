@@ -1,3 +1,4 @@
+import { finaltest } from "./test.js";
 export default class Atlas {
   constructor(_parent, _item) {
     this.parent = _parent;

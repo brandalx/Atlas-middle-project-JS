@@ -1,5 +1,6 @@
 import Atlas from "./atlasItem.js";
 import { bordercountry } from "./atlasForm.js";
+import { finaltest } from "./test.js";
 
 let query = " ";
 let div = document.querySelector("#main-appender");
@@ -13,6 +14,10 @@ search.addEventListener("submit", (e) => {
 
   doApi(query);
 });
+
+//test start
+finaltest();
+//test end
 
 export const doApiFav = async (query2) => {
   let countryCode = query2;
