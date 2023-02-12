@@ -1,5 +1,7 @@
 # Atlas middle Java Script Project 🌎
 
+### You may check this project online on Netlify, follow the link: https://atlas-project.netlify.app/
+
 ## Key Features
 
 **Connecting to the API of Rest countries and Google Maps**
