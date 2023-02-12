@@ -1,4 +1,4 @@
-# Atlas middle Java Scipt Project 
+# Atlas middle Java Scipt Project 🌎
 
 ## Key Features
 
