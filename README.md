@@ -24,8 +24,11 @@
 ## How To Use
 
 ### You may use this in few ways:
-To run as user go to the adress of deployed project on netlify: https://atlas-project.netlify.app/
-Another way it's to use Clone this repo to your local folder:
+
+**To run as user go to the adress of deployed project on netlify: https://atlas-project.netlify.app/**
+
+**Another way it's to use Clone this repo to your local folder:**
+
 To clone and run this application, you'll need Git (https://git-scm.com/) and Node.js (https://nodejs.org/en/download/) (which comes with npm (http://npmjs.com/)) installed on your computer. From your command line:
 
 #### Clone this repository to the selected folder
@@ -35,6 +38,8 @@ To clone and run this application, you'll need Git (https://git-scm.com/) and No
 $ git clone https://github.com/brandalx/atlas-middle-project.git .
 ```
 #### Install dependencies
+
+`bash`
 ```
 $ npm install
 ```
