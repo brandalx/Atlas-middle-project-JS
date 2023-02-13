@@ -1,11 +1,11 @@
-# Atlas middle Java Script Project 🌎
+# Atlas - middle Java Script Project 🌎
 
 ### You may check this project online on Netlify, follow the link: https://atlas-project.netlify.app/
 
 ## Key Features
 
-**Connecting to the API of Rest countries and Google Maps**
-- The app simply connects to the API restcountries.com and Google maps, then providing infromation about required country
+**Connecting to the API of REST countries, Google Maps**
+- The app simply connects to the API of restcountries.com, Google maps and provides infromation about required country
 - It's allows to search for any country name
 - Its allows to make an ouput of selected country information from API like so: country flag, country name, population,  region, languages, currencies , capital and border states.
 - It's shows an Google map for selected country
