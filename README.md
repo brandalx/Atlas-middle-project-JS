@@ -1,4 +1,4 @@
-# Atlas - middle Java Script Project 🌎
+# Atlas Project 🌎
 
 ### You may check this project online on Netlify, follow the link: https://atlas-project.netlify.app/
 
